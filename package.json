@@ -1,14 +1,34 @@
 {
-  "name": "kabzui",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@jameskabz/kabzui",
+  "version": "0.1.0",
+  "private": false,
   "type": "module",
+  "description": "A Vue.js component library with tailwindcss",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/James-Kabz/kabzui-javascript"
+  },
+  "author": "James Kabz",
+  "license": "MIT",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
