@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import { Button } from './components'
+import Button from './components/Button/Button.vue'
 
 interface InstallOptions {
   prefix?: string
