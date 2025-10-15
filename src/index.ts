@@ -1,8 +1,12 @@
 import type { App } from 'vue'
-import * as components from './components/index'
+import { Button } from './components'
 
 interface InstallOptions {
   prefix?: string
+}
+
+const components = {
+  Button
 }
 
 const KABZUI = {
@@ -17,3 +21,8 @@ const KABZUI = {
 }
 
 export default KABZUI
+
+
+export {
+  Button
+}

@@ -1,6 +1,6 @@
 {
   "name": "@jameskabz/kabzui",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
   "type": "module",
   "description": "A Vue.js component library with tailwindcss",
