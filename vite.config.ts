@@ -32,10 +32,6 @@ export default defineConfig({
         globals: {
           vue: "Vue",
         },
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "style.css") return "css"
-          return assetInfo.name!
-        },
       },
     },
     copyPublicDir: false,

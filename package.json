@@ -1,6 +1,6 @@
 {
   "name": "@jameskabz/kabzui",
-  "version": "0.2.4",
+  "version": "0.2.8",
   "private": false,
   "type": "module",
   "description": "A Vue.js component library with tailwindcss",
@@ -13,7 +13,7 @@
       "import": "./dist/index.esm.js",
       "require": "./dist/index.js"
     },
-    "./css": "./dist/kabzui.css"
+    "./dist/css": "./dist/kabzui.css"
   },
   "files": [
     "dist"
