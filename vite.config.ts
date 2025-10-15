@@ -20,9 +20,9 @@ export default defineConfig({
       name: "KABZUI",
       formats: ["es", "cjs"],
       fileName: (format) => {
-        if (format === "es") return "index.esm.ts"
-        if (format === "cjs") return "index.ts"
-        return `index.${format}.ts`
+        if (format === "es") return "index.esm.js"
+        if (format === "cjs") return "index.js"
+        return `index.${format}.js`
       },
     },
     rollupOptions: {
@@ -38,6 +38,7 @@ export default defineConfig({
         },
       },
     },
+    copyPublicDir: false,
   },
   resolve: {
     alias: {

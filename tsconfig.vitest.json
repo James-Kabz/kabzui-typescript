@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.app.json",
+  "extends": "./tsconfig.json",
   "include": ["src/**/__tests__/*", "env.d.ts"],
   "exclude": [],
   "compilerOptions": {
@@ -8,7 +8,7 @@
     "declaration": true,
     "declarationMap": true,
     "outDir": "dist",
-    "emitDeclarationOnly": false,
+    "emitDeclarationOnly": true,
 
     "lib": [],
     "types": ["node", "jsdom"]
