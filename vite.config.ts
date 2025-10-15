@@ -33,7 +33,7 @@ export default defineConfig({
           vue: "Vue",
         },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "style.css") return "kabzui.css"
+          if (assetInfo.name === "style.css") return "css"
           return assetInfo.name!
         },
       },
